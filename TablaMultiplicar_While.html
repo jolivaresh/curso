@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA - TABLAS DE MULTIPLICAR</h1>
+
+<script>
+
+    function saltarLinea() {
+
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+
+    }
+
+    function imprimir(frase) {
+
+        document.write(frase);
+        saltarLinea();
+
+    }
+
+    //______________________________________________________________
+
+    var Multiplicando = parseInt(prompt("que tabla quieres calcular?"));
+    multiplicador = 1;
+
+    while (multiplicador <= 10) {
+
+        imprimir(Multiplicando + " x " + multiplicador + " = " + multiplicador * Multiplicando)
+
+        multiplicador = multiplicador +1
+    }
+
+
+</script>

@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<h1>Ejercicios Curso Alura</h1>
+<h2>logica de programacion parte 2:</h2>
+<h3>Total de invitados de la fiesta</h3>
+
+//* Nuestro amigo Jorge creó un programa simple para calcular el total de invitados de su fiesta, el programa tiene que sumar el total de invitados normales con el total de invitados VIPs. Ciertamente podría usar la calculadora, pero le pareció relevante ejercer su conocimiento para diseñar un programa. Entonces, Jorge escribió lo siguiente:
+
+
+<script>
+
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+// se deve agregar el comando parseInt para convertir el textyo en numero entero.
+    //var invitados = prompt("Número de invitados");
+    //var vips = prompt("Número de invitados VIP's");
+
+    var invitados = parseInt(prompt("Número de invitados"));
+    var vips = parseInt(prompt("Número de invitados VIP's"));
+
+    var total = invitados + vips;
+    saltarLinea
+
+    imprimir("El total de invitados es " + total);
+
+</script>

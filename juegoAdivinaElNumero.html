@@ -1,0 +1,54 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA - JUEGO DE ADIVINA EL NUMERO</h1>
+
+<script>
+
+    function saltarLinea() {
+
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+
+    }
+
+    function imprimir(frase) {
+
+        document.write(frase);
+        saltarLinea();
+
+    }
+    //______________________________________________________________
+
+
+    var numeroPensado = Math.round(Math.random() * 10);
+    var numeroLanzado = parseInt(prompt("adivina el Numero entre 0 y 10"));
+
+    if (numeroLanzado < 0 || numeroLanzado > 10) {
+
+        imprimir("el numero ingresado es erroneo, intetalo nuevamente, recuerda que debe ser entra 0 y 10")
+    
+    }
+
+    else {
+
+        if (numeroPensado == numeroLanzado){
+
+            imprimir("Felicitaciones adivinaste")
+
+        }
+
+        else {
+
+            imprimir("oooh! ..No es el numero")
+
+        }
+
+        imprimir( "el numero magico era; " + numeroPensado)
+
+    }
+
+    
+
+</script>
+
